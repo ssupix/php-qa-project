@@ -32,6 +32,8 @@ include_once 'crud.php';
                 <?php } ?>
             </form>
 
+            <div class="banner"></div>
+
             <h2>Entries</h2>
             <table class="db-entries">
                 <tr>

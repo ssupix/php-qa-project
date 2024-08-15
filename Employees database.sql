@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Aug 03, 2024 at 04:39 PM
+-- Generation Time: Aug 15, 2024 at 01:12 AM
 -- Server version: 5.7.39
 -- PHP Version: 8.2.0
 
@@ -43,7 +43,7 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `fn`, `ln`, `photo`, `job`, `quote`, `skills`, `dislikes`) VALUES
-(5, 'Masha', 'Supikhanova', 'masha.png', 'front-end developer', '\"Creating meaningful experiences online.\"', '3D Modeling, Dancing', '-');
+(1, 'Masha', 'Supikhanova', 'masha.jpg', 'front-end developer', 'Creating meaningful experiences online.', '3d modeling, hip-hop freestyle', 'lazy people on the job');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +63,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
