@@ -45,7 +45,7 @@ include_once 'crud.php';
     </div>
     <div class="col-12 grid">
         <div class="col-4 signature">
-                <img src="./logo.svg" alt="logo">
+                <img src="./assets/logo.svg" alt="logo">
         </div>
         <div class="col-8 bottom">
             <div class="extra">
