@@ -1,13 +1,6 @@
-body {
-    font-family: "Space Mono", monospace;
-    background-color: $background;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+// STYLES FOR CARDS
 
+// nested grid styles
 .grid {
     .grid {
         margin: 0;
@@ -15,6 +8,7 @@ body {
     }
 }
 
+// preview card styles
 .card-preview {
     background: $background;
     box-shadow:  17px 17px 34px #7f7d7c,
@@ -156,6 +150,7 @@ body {
     }
 }
 
+// general card in grid styles
 .card-general {
     background: $background;
     box-shadow:  17px 17px 34px #7f7d7c,

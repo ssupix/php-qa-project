@@ -1,0 +1,19 @@
+nav {
+    width: 97%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: solid black 1px;
+
+    .logo {
+        max-width: 140px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

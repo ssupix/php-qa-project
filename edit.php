@@ -17,7 +17,7 @@ include_once 'crud.php';
             <a href="cards.php">view all</a>
         </header>
         <div class="form col-12">
-            <form method="post">
+            <form class="data-entry" method="post">
                 <input type="text" name="fn" placeholder="First Name" value="<?php if (isset($editData)) echo $editData['fn']; ?>" required />
                 <input type="text" name="ln" placeholder="Last Name" value="<?php if (isset($editData)) echo $editData['ln']; ?>" required />
                 <input type="text" name="photo" placeholder="Photo URL" value="<?php if (isset($editData)) echo $editData['photo']; ?>" required />
