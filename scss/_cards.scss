@@ -1,22 +1,6 @@
-
-:root {
-    /* Pink shades */
-    --pink-100: #FFACCC;
-    --pink-200: #E36A98;
-    --pink-300: #DB1D6F;
-
-    /* Blue shades */
-    --blue-100: #C4CBE7;
-    --blue-200: #97A0C4;
-    --blue-300: #646A82;
-
-    /* Background color */
-    --background: #F4F1EE;
-}
-
 body {
     font-family: "Space Mono", monospace;
-    background-color:var(--background);
+    background-color: $background;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +16,7 @@ body {
 }
 
 .card-preview {
-    background: #F4F1EE;
+    background: $background;
     box-shadow:  17px 17px 34px #7f7d7c,
                 -17px -17px 34px #ffffff;
     border-radius: 12px;
@@ -49,18 +33,18 @@ body {
         justify-content: flex-end;
         align-items: center;
         padding: 2% 2% 1% 2%;
-        border-bottom: 1px solid var(--pink-100);
+        border-bottom: 1px solid $pink-100;
     }
     
     .edit {
-        color: var(--blue-200);
+        color: $blue-200;
         font-weight: 600;
         text-decoration: none;
         font-size: 20px;
     }
     
     .edit:hover {
-        color: var(--blue-100);
+        color: $blue-100;
         font-weight: 600;
         text-decoration: none;
     }
@@ -87,7 +71,7 @@ body {
         gap: 1rem;
     
         .name {
-            color: var(--pink-300);
+            color: $pink-300;
             font-size: 26px;
             font-weight: 600;
             text-transform: uppercase;
@@ -107,27 +91,27 @@ body {
         }
     
         .title {
-            color: var(--pink-200);
+            color: $pink-200;
             font-size: 18px;
             text-transform: uppercase;
             margin: 0;
         }
         
         .q {
-            color: var(--pink-300);
+            color: $pink-300;
             text-transform: uppercase;
             font-size: 14px;
             margin: 0;
         }
         
         .a {
-            color: var(--pink-200);
+            color: $pink-200;
             font-size: 14px;
             margin: 0;
         }
         
         .quote {
-            color: var(--pink-300);
+            color: $pink-300;
             font-style: italic;
             text-transform: uppercase;
             font-size: 16px;
@@ -161,19 +145,19 @@ body {
     }
     
     .dates, .copyright {
-        color: var(--pink-100);
+        color: $pink-100;
         font-size: 10px;
         margin: 0;
         width: 100%;
     
         a {
-            color: var(--pink-100);
+            color: $pink-100;
         }
     }
 }
 
 .card-general {
-    background: #F4F1EE;
+    background: $background;
     box-shadow:  17px 17px 34px #7f7d7c,
                 -17px -17px 34px #ffffff;
     border-radius: 12px;
@@ -195,18 +179,18 @@ body {
         justify-content: flex-end;
         align-items: center;
         padding: 2% 2% 1% 2%;
-        border-bottom: 1px solid var(--pink-100);
+        border-bottom: 1px solid $pink-100;
     }
     
     .edit {
-        color: var(--blue-200);
+        color: $blue-200;
         font-weight: 600;
         text-decoration: none;
         font-size: 16px;
     }
     
     .edit:hover {
-        color: var(--blue-100);
+        color: $blue-100;
         font-weight: 600;
         text-decoration: none;
     }
@@ -233,7 +217,7 @@ body {
         gap: 1rem;
     
         .name {
-            color: var(--pink-300);
+            color: $pink-300;
             font-size: 20px;
             font-weight: 600;
             text-transform: uppercase;
@@ -253,27 +237,27 @@ body {
         }
     
         .title {
-            color: var(--pink-200);
+            color: $pink-200;
             font-size: 16px;
             text-transform: uppercase;
             margin: 0;
         }
         
         .q {
-            color: var(--pink-300);
+            color: $pink-300;
             text-transform: uppercase;
             font-size: 12px;
             margin: 0;
         }
         
         .a {
-            color: var(--pink-200);
+            color: $pink-200;
             font-size: 10px;
             margin: 0;
         }
         
         .quote {
-            color: var(--pink-300);
+            color: $pink-300;
             font-style: italic;
             text-transform: uppercase;
             font-size: 14px;
@@ -307,13 +291,13 @@ body {
     }
     
     .dates, .copyright {
-        color: var(--pink-100);
+        color: $pink-100;
         font-size: 8px;
         margin: 0;
         width: 100%;
     
         a {
-            color: var(--pink-100);
+            color: $pink-100;
         }
     }
 }

@@ -142,22 +142,9 @@ body {
   min-height: 100vh;
 }
 
-:root {
-  /* Pink shades */
-  --pink-100: #FFACCC;
-  --pink-200: #E36A98;
-  --pink-300: #DB1D6F;
-  /* Blue shades */
-  --blue-100: #C4CBE7;
-  --blue-200: #97A0C4;
-  --blue-300: #646A82;
-  /* Background color */
-  --background: #F4F1EE;
-}
-
 body {
   font-family: "Space Mono", monospace;
-  background-color: var(--background);
+  background-color: #F4F1EE;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,16 +176,16 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 2% 2% 1% 2%;
-  border-bottom: 1px solid var(--pink-100);
+  border-bottom: 1px solid #FFACCC;
 }
 .card-preview .edit {
-  color: var(--blue-200);
+  color: #97A0C4;
   font-weight: 600;
   text-decoration: none;
   font-size: 20px;
 }
 .card-preview .edit:hover {
-  color: var(--blue-100);
+  color: #C4CBE7;
   font-weight: 600;
   text-decoration: none;
 }
@@ -223,7 +210,7 @@ body {
   gap: 1rem;
 }
 .card-preview .info .name {
-  color: var(--pink-300);
+  color: #DB1D6F;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
@@ -240,24 +227,24 @@ body {
   gap: 0.3rem;
 }
 .card-preview .info .title {
-  color: var(--pink-200);
+  color: #E36A98;
   font-size: 18px;
   text-transform: uppercase;
   margin: 0;
 }
 .card-preview .info .q {
-  color: var(--pink-300);
+  color: #DB1D6F;
   text-transform: uppercase;
   font-size: 14px;
   margin: 0;
 }
 .card-preview .info .a {
-  color: var(--pink-200);
+  color: #E36A98;
   font-size: 14px;
   margin: 0;
 }
 .card-preview .info .quote {
-  color: var(--pink-300);
+  color: #DB1D6F;
   font-style: italic;
   text-transform: uppercase;
   font-size: 16px;
@@ -286,13 +273,13 @@ body {
   gap: 0.3rem;
 }
 .card-preview .dates, .card-preview .copyright {
-  color: var(--pink-100);
+  color: #FFACCC;
   font-size: 10px;
   margin: 0;
   width: 100%;
 }
 .card-preview .dates a, .card-preview .copyright a {
-  color: var(--pink-100);
+  color: #FFACCC;
 }
 
 .card-general {
@@ -318,16 +305,16 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 2% 2% 1% 2%;
-  border-bottom: 1px solid var(--pink-100);
+  border-bottom: 1px solid #FFACCC;
 }
 .card-general .edit {
-  color: var(--blue-200);
+  color: #97A0C4;
   font-weight: 600;
   text-decoration: none;
   font-size: 16px;
 }
 .card-general .edit:hover {
-  color: var(--blue-100);
+  color: #C4CBE7;
   font-weight: 600;
   text-decoration: none;
 }
@@ -352,7 +339,7 @@ body {
   gap: 1rem;
 }
 .card-general .info .name {
-  color: var(--pink-300);
+  color: #DB1D6F;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -369,24 +356,24 @@ body {
   gap: 0.3rem;
 }
 .card-general .info .title {
-  color: var(--pink-200);
+  color: #E36A98;
   font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 .card-general .info .q {
-  color: var(--pink-300);
+  color: #DB1D6F;
   text-transform: uppercase;
   font-size: 12px;
   margin: 0;
 }
 .card-general .info .a {
-  color: var(--pink-200);
+  color: #E36A98;
   font-size: 10px;
   margin: 0;
 }
 .card-general .info .quote {
-  color: var(--pink-300);
+  color: #DB1D6F;
   font-style: italic;
   text-transform: uppercase;
   font-size: 14px;
@@ -415,13 +402,13 @@ body {
   gap: 0.3rem;
 }
 .card-general .dates, .card-general .copyright {
-  color: var(--pink-100);
+  color: #FFACCC;
   font-size: 8px;
   margin: 0;
   width: 100%;
 }
 .card-general .dates a, .card-general .copyright a {
-  color: var(--pink-100);
+  color: #FFACCC;
 }
 
 body.edit {
