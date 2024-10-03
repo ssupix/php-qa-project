@@ -9,7 +9,9 @@
 <body class="hundred">
     <nav>
         <div class="logo">
+            <a href="./index.php">
             <img src="./assets/black-logo.svg" alt="Logo">
+            </a>
         </div>
         <ul class="links">
             <li><a href="./cards.php">Preview All</a></li>

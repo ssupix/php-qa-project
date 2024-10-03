@@ -11,7 +11,7 @@ include_once 'crud.php';
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body class="edit">
-    <main class="grid">
+    <main class="grid edit-screen">
         <header class="col-12">
             <h1>Company Profile</h1>
             <a href="cards.php">view all</a>
