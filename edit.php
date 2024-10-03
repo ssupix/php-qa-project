@@ -8,14 +8,15 @@ include_once 'crud.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
-<body>
-    <div class="main">
-        <header>
+<body class="edit">
+    <main class="grid">
+        <header class="col-12">
             <h1>Company Profile</h1>
+            <a href="cards.php">view all</a>
         </header>
-        <div class="form">
+        <div class="form col-12">
             <form method="post">
                 <input type="text" name="fn" placeholder="First Name" value="<?php if (isset($editData)) echo $editData['fn']; ?>" required />
                 <input type="text" name="ln" placeholder="Last Name" value="<?php if (isset($editData)) echo $editData['ln']; ?>" required />
@@ -32,10 +33,10 @@ include_once 'crud.php';
                 <?php } ?>
             </form>
 
-            <div class="banner"></div>
+            <div class="banner col-12"></div>
 
-            <h2>Entries</h2>
-            <table class="db-entries">
+            <h2 class="col-12">Entries</h2>
+            <table class="db-entries col-12">
                 <tr>
                     <th>ID</th>
                     <th>First Name</th>
@@ -68,6 +69,6 @@ include_once 'crud.php';
                 <?php } ?>
             </table>
         </div>
-    </div>
+    </main>
 </body>
 </html>

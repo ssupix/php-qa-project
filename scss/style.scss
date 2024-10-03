@@ -1,0 +1,15 @@
+@import 'colors';
+@import 'grid';
+
+body {
+    font-family: "Space Mono", monospace;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@import 'cards';
+@import 'edit';

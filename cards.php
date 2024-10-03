@@ -8,20 +8,16 @@ include_once 'crud.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Shadows+Into+Light&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <title>Public View</title>
+    <title>all cards here</title>
 </head>
 <body>
-
-            <?php
-                $res = $userdb->query("SELECT * FROM employees WHERE id=" . $_GET['preview']);
-                while ($row = $res->fetch_assoc()) {
-            ?>
-<div class="card-preview grid">
+<a href="./edit.php">edit all</a>
+<div class="grid">
+        <?php
+            $res = $userdb->query("SELECT * FROM employees");
+            while ($row = $res->fetch_assoc()) {
+        ?>
+<div class="card-general col-12 col-6-md col-4-lg grid">
     <div class="col-12 header">
         <a class="edit" href="./edit.php?edit=<?php echo $row['id']?>">EDIT</a>
     </div>
@@ -56,7 +52,8 @@ include_once 'crud.php';
     </div>
 </div>
 
-    <?php } ?>
-
+<?php } ?>
+</div>
+    
 </body>
 </html>
