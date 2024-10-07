@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Shadows+Into+Light&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
     <title>log in screen</title>
 </head>
 <body class="hundred">
@@ -42,7 +44,40 @@
                 </form>
             </div>
         </div>
-        <h1 class="col-12">Log In</h1>
+        <h1 class="col-12">
+            <img src="./assets/login-title.svg" alt="LOG IN">
+        </h1>
+
+        <div class="scrolling-text-box">
+            <div class="scrolling-text-wrap">
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+                    <p>Login</p>
+            </div>
+        </div>
+        
     </main>
     
 </body>
