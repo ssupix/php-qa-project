@@ -33,16 +33,16 @@ nav {
     gap: 0;
     background: linear-gradient(90deg, #FFACCC 50%, white 50%);
     display: grid;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 60% 30%;
 
     h1 {
         margin: 0;
         padding: 1rem 0;
-        // font-size: 12rem;
         text-align: center;
-        // font-weight: 300;
-        // font-family: 'Friz Quadrata Regular OS';
-        // text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 5rem;
 
         img {
             padding-top: 1rem;
