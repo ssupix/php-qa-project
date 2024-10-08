@@ -132,10 +132,6 @@
     grid-column: span 12;
   }
 }
-@font-face {
-  font-family: "Friz Quadrata Std Bold";
-  src: url("../fonts/friz-quadrata-std-bold-587034a220f9f.otf") format("opentype");
-}
 body {
   font-family: "Space Mono", monospace;
   background-color: #F4F1EE;
@@ -513,7 +509,7 @@ nav .links {
 nav .links li {
   font-family: "JetBrains Mono", monospace;
   background-color: #DB1D6F;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 10px 20px;
 }
 
@@ -523,14 +519,17 @@ nav .links li {
   height: inherit;
   margin: 0;
   gap: 0;
-  background: linear-gradient(90deg, #FFACCC 50%, white 50%);
+  background: linear-gradient(90deg, #F4F1EE 50%, white 50%);
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 60% 30%;
 }
 .login-screen h1 {
   margin: 0;
   padding: 1rem 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 .login-screen h1 img {
   padding-top: 1rem;
@@ -591,6 +590,7 @@ nav .links li {
   color: black;
   padding: 10px 0 0 0;
   margin: 1.25rem 0 1.25rem 0;
+  background: none;
 }
 .login-screen .form-container .form-wrap form.login-form input::-moz-placeholder {
   color: black;
@@ -602,7 +602,7 @@ nav .links li {
 }
 .login-screen .form-container .form-wrap form.login-form input:focus {
   outline: none;
-  background-color: rgb(239, 239, 239);
+  background: none;
 }
 .login-screen .form-container .form-wrap form.login-form .form-actions {
   display: flex;
