@@ -149,7 +149,7 @@ body {
 
 nav {
   width: 97%;
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -542,7 +542,7 @@ nav .links li {
 .login-screen .thumb .image {
   height: 70%;
   width: 50%;
-  background-image: url(../jayden.jpg);
+  background-image: url(../miau.png);
   background-size: cover;
   background-position: center;
   background-color: white;
