@@ -25,7 +25,7 @@ nav {
         };
     }
 }
-.login-screen {
+.create-screen {
     width: 100%;
     max-width: 100%;
     height: inherit;
@@ -33,7 +33,6 @@ nav {
     gap: 0;
     background: linear-gradient(90deg, $background 50%, white 50%);
     display: grid;
-    grid-template-rows: 60% 30%;
 
     h1 {
         margin: 0;
@@ -48,36 +47,17 @@ nav {
         }
     }
 
-    // IMAGE FADE IN
-    .thumb {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-
-        .image {
-            height: 70%;
-            width: 50%;
-            background-image: url(../miau.png);
-            background-size: cover;
-            background-position: center;
-            background-color: white; // Fallback color
-            border: 0.95rem white solid;
-            box-sizing: border-box; 
-        }
-    }
-
     // LOGIN FORM STYLING
     .form-container {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
 
         .form-wrap {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 70%;
-            width: 60%;
+            width: 40%;
 
             .intro {
                 display: flex;
@@ -149,7 +129,6 @@ nav {
                         text-align: center;
                         color: black;
                         text-decoration: none;
-                        box-sizing: border-box;
                     }
                 }
             }

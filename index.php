@@ -1,3 +1,38 @@
+<?php
+session_start(); // Start the session
+include 'config.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Prepare the SQL query
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $user = $result->fetch_assoc();
+        // Verify the password
+        if (password_verify($password, $user['password'])) {
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_name'] = $user['name'];
+            header("Location: cards.php");
+            // Redirect to a protected page or dashboard
+        } else {
+            $error = "Invalid password.";
+        }
+    } else {
+        $error = "No user found with that email.";
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,13 +69,14 @@
                     <h2>Student Database Login </h2>
                     <p>Figma ipsum component variant main layer. Fill union image project text strikethrough asset link slice editor. Create plugin overflow variant flatten pen invite effect pen undo. Pen bold comment asset align flatten. Slice layer follower plugin rotate bullet distribute thumbnail strikethrough.</p>
                 </div>
-                <form class="login-form" action="">
-                    <input type="email" id="email" name="email" placeholder="email" required>
-                    <input type="password" id="password" name="password" placeholder="password" required>
+                <form class="login-form" autocomplete="off" action="" method="post"> 
+                    <input type="email" id="email" name="email" placeholder="email" required autocomplete="off">
+                    <input type="password" id="password" name="password" placeholder="password" required autocomplete="off">
                     <div class="form-actions">
                         <button type="submit" class="btn btn-login">Log In</button>
-                        <button type="button" class="btn btn-create-account">Create Account</button>
+                        <a type="button" class="btn btn-create-account" href="./create.php">Create Account</a>
                     </div>
+                    <?php if (isset($error)) { echo "<p class='error'>$error</p>"; } ?>
                 </form>
             </div>
         </div>

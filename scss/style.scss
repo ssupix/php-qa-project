@@ -16,9 +16,11 @@ body {
 
 .hundred {
     height: 100vh;
+    overflow: hidden
 }
 
 @import 'nav';
 @import 'cards';
 @import 'edit';
 @import 'login';
+@import 'create';

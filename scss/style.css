@@ -145,6 +145,7 @@ body {
 
 .hundred {
   height: 100vh;
+  overflow: hidden;
 }
 
 nav {
@@ -617,9 +618,20 @@ nav .links li {
   text-transform: lowercase;
   padding: 0.3rem;
   font-size: 1.15rem;
+  cursor: pointer;
 }
-.login-screen .form-container .form-wrap form.login-form .form-actions button:nth-child(2) {
+.login-screen .form-container .form-wrap form.login-form .form-actions a.btn {
+  border: 2px solid black;
   background-color: white;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: lowercase;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 .login-screen .scrolling-text-box {
   background: black;
@@ -641,6 +653,162 @@ nav .links li {
   height: 50px;
 }
 .login-screen .scrolling-text-box .scrolling-text-wrap p {
+  color: #DB1D6F;
+  padding: 0 3rem;
+  font-family: "Space Mono";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  color: black;
+  text-decoration: none;
+}
+nav .links {
+  list-style-type: none;
+  text-transform: lowercase;
+  margin-top: -0.5rem;
+  margin-right: -1rem;
+}
+nav .links li {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #DB1D6F;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.create-screen {
+  width: 100%;
+  max-width: 100%;
+  height: inherit;
+  margin: 0;
+  gap: 0;
+  background: linear-gradient(90deg, #F4F1EE 50%, white 50%);
+  display: grid;
+}
+.create-screen h1 {
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.create-screen h1 img {
+  padding-top: 1rem;
+}
+.create-screen .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-screen .form-container .form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.create-screen .form-container .form-wrap .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.create-screen .form-container .form-wrap .intro h2 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #646A82;
+  margin: 0;
+}
+.create-screen .form-container .form-wrap .intro p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+.create-screen .form-container .form-wrap form.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.create-screen .form-container .form-wrap form.login-form input {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px black;
+  font-family: "Space Mono";
+  color: black;
+  padding: 10px 0 0 0;
+  margin: 1.25rem 0 1.25rem 0;
+  background: none;
+}
+.create-screen .form-container .form-wrap form.login-form input::-moz-placeholder {
+  color: black;
+  font-size: 1.15rem;
+}
+.create-screen .form-container .form-wrap form.login-form input::placeholder {
+  color: black;
+  font-size: 1.15rem;
+}
+.create-screen .form-container .form-wrap form.login-form input:focus {
+  outline: none;
+  background: none;
+}
+.create-screen .form-container .form-wrap form.login-form .form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.create-screen .form-container .form-wrap form.login-form .form-actions button {
+  background-color: #DB1D6F;
+  border: 2px solid black;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: lowercase;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.create-screen .form-container .form-wrap form.login-form .form-actions a.btn {
+  border: 2px solid black;
+  background-color: white;
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: lowercase;
+  padding: 0.3rem;
+  font-size: 1.15rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.create-screen .scrolling-text-box {
+  background: black;
+  min-width: 100%;
+  height: 50px;
+  bottom: 1.5rem;
+  position: absolute;
+  overflow-x: hidden;
+}
+.create-screen .scrolling-text-box .scrolling-text-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  min-width: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  animation: scroll 40s linear infinite;
+  height: 50px;
+}
+.create-screen .scrolling-text-box .scrolling-text-wrap p {
   color: #DB1D6F;
   padding: 0 3rem;
   font-family: "Space Mono";
