@@ -113,6 +113,9 @@ $conn->close();
                     <p>Sign Up</p>
                     <p>Sign Up</p>
                     <p>Sign Up</p>
+                    <p>Sign Up</p>
+                    <p>Sign Up</p>
+                    <p>Sign Up</p>
             </div>
         </div>
         

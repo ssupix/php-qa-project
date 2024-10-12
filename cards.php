@@ -27,12 +27,12 @@ include_once 'crud.php';
         </ul>
     </nav>
 
-    <div class="grid">
+    <div class="grid cards">
         <?php
             $res = $userdb->query("SELECT * FROM employees");
             while ($row = $res->fetch_assoc()) {
         ?>
-        <div class="card-general col-12 col-6-md col-4-lg grid">
+        <div class="card-general col-4-lg col-6-md col-12 grid">
             <div class="col-12 header">
                 <a class="edit" href="./edit.php?edit=<?php echo $row['id']?>">EDIT</a>
             </div>
