@@ -1,8 +1,8 @@
 <?php 
-        $localhost = 'localhost';
-        $user = 'u704810582_ssupix21';
-        $password = 'NoSleep22$';
-        $db_name = 'u704810528_classlist';
+        $localhost = "localhost";
+        $user = "u704810582_ssupix21";
+        $password = "NoSleep22$";
+        $db_name = "u704810582_classlist";
 
         $userdb = new MySQLi( $localhost, $user, $password, $db_name );
 
