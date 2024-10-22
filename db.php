@@ -1,6 +1,6 @@
 <?php 
         $localhost = 'localhost';
-        $user = 'ssupix21';
+        $user = 'u704810582_ssupix21';
         $password = 'NoSleep22$';
         $db_name = 'u704810528_classlist';
 
